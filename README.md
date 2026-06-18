@@ -79,9 +79,6 @@ flowchart TD
 4. SQLAlchemy ORM interacts with the PostgreSQL database.
 5. Alembic manages database schema migrations and versioning.
 
-```
-```
-
 ## Installation
 
 ### Clone the repository
@@ -298,7 +295,6 @@ GET /patients
 ### Get Patients
 
 ![Get Patients](docs/images/get-patients.png)
-```
 
 ## Future Improvements
 
@@ -311,3 +307,5 @@ GET /patients
 ## License
 
 This project is licensed under the MIT License.
+
+

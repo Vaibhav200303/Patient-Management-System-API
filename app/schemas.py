@@ -1,9 +1,9 @@
-from pydantic import BaseModel,Field,computed_field
+from pydantic import BaseModel, ConfigDict,Field,computed_field
 from typing import Annotated,Literal
 #now we will define the route to create a new patient record in the patients.json file
 #for that we will use pydantic model
 
-class Patient(BaseModel):
+class PatientCreate(BaseModel):
     id: Annotated[
         str,
         Field(
@@ -124,3 +124,16 @@ class PatientUpdate(BaseModel):
         description="Weight of the patient in kilograms",
         examples=[70.5]
     )
+
+class PatientResponse(BaseModel):
+    id:str
+    name:str
+    city:str
+    age:int
+    gender:Literal["male","female","other"]
+    height:float
+    weight:float
+    bmi:float
+    verdict:str
+
+    model_config=ConfigDict(from_attributes=True)

@@ -14,6 +14,9 @@ engine=create_engine(DATABASE_URL)
 
 SessionLocal=sessionmaker(autocommit=False,autoflush=False,bind=engine)
 
+
+Base=declarative_base()
+
 #we have to create a way which will create a new session for each new request and ends the session when request is processed
 def get_db():
     db=SessionLocal()
@@ -21,5 +24,3 @@ def get_db():
         yield db
     finally:
         db.close()
-
-Base=declarative_base()

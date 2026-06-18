@@ -5,8 +5,7 @@ from app.db_models import Base
 from app.routers import patients
 
 
-# Create all database tables
-Base.metadata.create_all(bind=engine)
+
 
 
 # Initialize FastAPI application

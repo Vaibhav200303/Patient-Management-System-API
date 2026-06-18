@@ -164,10 +164,15 @@ http://127.0.0.1:8000/redoc
 
 ## API Screenshots
 
-```markdown
+### Swagger UI
+
 ![Swagger UI](docs/images/swagger-home.png)
 
+### Create Patient
+
 ![Create Patient](docs/images/create-patient.png)
+
+### Get Patients
 
 ![Get Patients](docs/images/get-patients.png)
 ```

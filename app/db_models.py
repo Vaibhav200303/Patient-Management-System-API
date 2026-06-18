@@ -1,8 +1,6 @@
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column,String,Float,Integer
-from app.db import engine
-
-Base=declarative_base()
+from app.db import Base
 
 class PatientDB(Base):
     __tablename__ = "patients"
